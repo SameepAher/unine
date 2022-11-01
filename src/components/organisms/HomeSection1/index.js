@@ -1,41 +1,52 @@
 import Container from 'atoms/Container'
 import Wrapper from 'atoms/Wrapper'
 import React from 'react'
+import appStore from '../../../images/appStore.png'
+import playStore from '../../../images/playStore.png'
+import phone from '../../../images/phone.png'
+import mcdLeft from '../../../images/mcdLeft.png'
+import mcdRight from '../../../images/mcdRight.png'
 
 const index = () => {
   return (
     <Wrapper className="bg-black py-6 lg:pb-40 lg:flex lg:pt-24 lg:justify-center">
-      <div className="lg:w-2/5">
-        <div className="font-mono font-bold text-3xl lg:text-5xl text-white mx-auto">
-          <div className="lg:text-left w-full mx-auto text-center">
-            More Payment Options <br /> Better than Cash
-          </div>
+      <div className="lg:w-2/5 lg:mx-20">
+        <div className="font-mono font-bold text-3xl lg:text-5xl text-white lg:text-left mx-auto text-center">
+          More Payment Options <br /> Better than Cash
         </div>
-        <div className="mt-6 lg:mt-12 font-mono font-normal text-sm text-white mx-auto">
-          <div className="lg:text-left text-center lg:w-3/5 lg:text-xl">
-            With a UNINE you can access the more than 240 million customers out there, as well as
-            offering management tools, options, and payment methods.
-          </div>
+        <div className="mt-6 lg:mt-12 font-mono font-normal text-sm text-white lg:text-left text-center sm:w-3/5 mx-auto lg:mx-0 lg:w-4/5 lg:text-xl">
+          With a UNINE you can access the more than 240 million customers out there, as well as
+          offering management tools, options, and payment methods.
         </div>
-        <div className="hidden mt-6 lg:mt-12 bg-black lg:flex justify-between lg:w-96">
-          <div className="border-2 rounded-lg w-40 h-16 rounded-lg"></div>
-          <div className="border-2 rounded-lg w-44 h-16 rounded-lg"></div>
+        <div className="hidden mt-6 lg:mt-12 lg:flex justify-between lg:w-72">
+          <img src={appStore} alt="" className="cursor-pointer" />
+          <img src={playStore} alt="" className="cursor-pointer" />
         </div>
-        <div className="hidden lg:flex mt-6 lg:mt-12 pb-4">
-          <span className="text-white text-xl">
-            Excellent <span className="text-green-300">4.9 out of 5</span>{' '}
-            <span className="ml-4">⭐ ⭐ ⭐ ⭐ ⭐</span>
-          </span>
-        </div>
+        <span className="hidden lg:flex mt-6 lg:mt-12 pb-4 lg:pb-0 text-white text-xl">
+          Excellent <span className="text-green-300 ml-2"> 4.9 out of 5</span>{' '}
+          <span className="ml-4">⭐ ⭐ ⭐ ⭐ ⭐</span>
+        </span>
       </div>
-      <div className="lg:border-2 rounded-lg lg:ml-4 border-white">
-        <div className="py-8 lg:py-0 bg-black">
-          <div className="border-2 rounded-lg w-72 lg:w-96 h-96 lg:h-full mx-auto"></div>
+      <div className="">
+        <div className="pb-8 pt-12 lg:py-0 lg:mx-20 relative w-fit mx-auto">
+          <img src={phone} alt="" className="mx-auto w-64 h-full" />
+          <img
+            src={mcdLeft}
+            alt=""
+            className="hidden sm:flex border-2 border-black absolute bottom-40 -left-24 w-56 h-12"
+          />
+          <img
+            src={mcdRight}
+            alt=""
+            className="hidden sm:flex border-2 border-black absolute bottom-12 left-28 w-56 h-12"
+          />
         </div>
-        <Container className="lg:hidden sm:w-3/5 px-2 py-6 bg-black flex justify-between">
-          <div className="border-2 rounded-lg w-36 h-16 rounded-lg"></div>
-          <div className="border-2 rounded-lg w-40 h-16 rounded-lg"></div>
-        </Container>
+        <div className="lg:hidden w-4/5 py-6 mx-auto">
+          <div className="w-4/5 flex justify-center mx-auto">
+            <img src={appStore} alt="" className="cursor-pointer mx-4" />
+            <img src={playStore} alt="" className="cursor-pointer mx-4" />
+          </div>
+        </div>
         <Container className="text-center lg:hidden px-2 pb-4">
           <span className="text-white text-xl">
             Excellent <span className="text-green-300">4.9 out of 5</span>{' '}
