@@ -1,4 +1,5 @@
 import React from 'react'
+import TransactionCard from 'molecules/TransactionCard'
 
 const index = () => {
   const cards = [
@@ -33,11 +34,7 @@ const index = () => {
       </div>
       <div className="grid lg:grid-cols-4 px-12 lg:px-44 mt-10 lg:mt-16 gap-y-4 lg:gap-x-8">
         {cards.map((card) => (
-          <div className="border-2 rounded-lg px-6 py-6 hover:bg-green-300 cursor-pointer">
-            <img src={card.picSrc} alt="" className="mb-12 w-10 h-10" />
-            <div className="font-bold">{card.title}</div>
-            <div className="mt-4 text-gray-500">{card.description}</div>
-          </div>
+          <TransactionCard picSrc={card.picSrc} title={card.title} description={card.description} />
         ))}
       </div>
     </div>
