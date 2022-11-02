@@ -7,11 +7,10 @@ import phone from '../../../images/phone.png'
 import mcdLeft from '../../../images/mcdLeft.png'
 import mcdRight from '../../../images/mcdRight.png'
 import AOS from 'aos'
-import 'aos/dist/aos.css' // You can also use <link> for styles
-// ..
-AOS.init()
+import 'aos/dist/aos.css'
 
 const index = () => {
+  AOS.init()
   return (
     <Wrapper className="bg-black py-6 lg:pb-40 lg:flex lg:pt-36 lg:justify-center">
       <div

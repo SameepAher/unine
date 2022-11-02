@@ -5,11 +5,10 @@ import card2 from '../../../images/card2.png'
 import card3 from '../../../images/card3.png'
 import card4 from '../../../images/card4.png'
 import AOS from 'aos'
-import 'aos/dist/aos.css' // You can also use <link> for styles
-// ..
-AOS.init()
+import 'aos/dist/aos.css'
 
 const index = () => {
+  AOS.init()
   const cards = [
     {
       picSrc: card1,
