@@ -1,9 +1,12 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import img2 from '../../../images/img2.png'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 
-const index = () => {
+const Index = () => {
+  useEffect(() => {
+    AOS.init()
+  }, [])
   return (
     <div
       className="mt-6 lg:mt-12 flex flex-col-reverse lg:flex-row justify-center items-center pb-12 lg:pb-24"
@@ -33,4 +36,4 @@ const index = () => {
   )
 }
 
-export default index
+export default Index

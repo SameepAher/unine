@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import TransactionCard from 'molecules/TransactionCard'
 import card1 from '../../../images/card1.png'
 import card2 from '../../../images/card2.png'
@@ -7,7 +7,10 @@ import card4 from '../../../images/card4.png'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 
-const index = () => {
+const Index = () => {
+  useEffect(() => {
+    AOS.init()
+  }, [])
   const cards = [
     {
       picSrc: card1,
@@ -55,4 +58,4 @@ const index = () => {
   )
 }
 
-export default index
+export default Index

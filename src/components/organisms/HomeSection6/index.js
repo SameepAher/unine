@@ -1,10 +1,13 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import appStore from '../../../images/appStore.png'
 import playStore from '../../../images/playStore.png'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 
-const index = () => {
+const Index = () => {
+  useEffect(() => {
+    AOS.init()
+  }, [])
   return (
     <div
       className="bg-green-400 lg:px-56 py-12 lg:py-16"
@@ -32,4 +35,4 @@ const index = () => {
   )
 }
 
-export default index
+export default Index

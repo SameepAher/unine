@@ -1,6 +1,6 @@
 import Container from 'atoms/Container'
 import Wrapper from 'atoms/Wrapper'
-import React from 'react'
+import React, { useEffect } from 'react'
 import appStore from '../../../images/appStore.png'
 import playStore from '../../../images/playStore.png'
 import phone from '../../../images/phone.png'
@@ -9,7 +9,10 @@ import mcdRight from '../../../images/mcdRight.png'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 
-const index = () => {
+const Index = () => {
+  useEffect(() => {
+    AOS.init()
+  }, [])
   return (
     <Wrapper className="bg-black py-6 lg:pb-40 lg:flex lg:pt-36 lg:justify-center">
       <div
@@ -76,4 +79,4 @@ const index = () => {
   )
 }
 
-export default index
+export default Index
