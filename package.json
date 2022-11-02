@@ -8,6 +8,7 @@
     "@fortawesome/fontawesome-svg-core": "^6.2.0",
     "@fortawesome/free-brands-svg-icons": "^6.2.0",
     "@fortawesome/react-fontawesome": "^0.2.0",
+    "aos": "^3.0.0-beta.6",
     "gatsby": "^4.24.5",
     "gatsby-background-image": "^1.6.0",
     "gatsby-plugin-fontawesome-css": "^1.2.0",
@@ -21,6 +22,7 @@
     "prop-types": "^15.8.1",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
+    "taos": "^1.0.2",
     "yarn": "^1.22.19"
   },
   "devDependencies": {

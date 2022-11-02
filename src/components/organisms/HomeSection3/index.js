@@ -1,9 +1,21 @@
 import React from 'react'
 import img1 from '../../../images/img1.png'
+import AOS from 'aos'
+import 'aos/dist/aos.css' // You can also use <link> for styles
+// ..
+AOS.init()
 
 const index = () => {
   return (
-    <div className="mt-12 flex flex-col lg:flex-row justify-center items-center pb-12">
+    <div
+      className="mt-12 flex flex-col lg:flex-row justify-center items-center pb-12"
+      data-aos="fade-up"
+      data-aos-offset="200"
+      data-aos-delay="50"
+      data-aos-duration="1000"
+      data-aos-easing="ease-in-out"
+      data-aos-once="false"
+    >
       <div className="w-full lg:w-2/5 p-6">
         <img src={img1} alt="" className="w-4/5 h-80 m-auto" />
       </div>

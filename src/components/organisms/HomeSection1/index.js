@@ -6,11 +6,23 @@ import playStore from '../../../images/playStore.png'
 import phone from '../../../images/phone.png'
 import mcdLeft from '../../../images/mcdLeft.png'
 import mcdRight from '../../../images/mcdRight.png'
+import AOS from 'aos'
+import 'aos/dist/aos.css' // You can also use <link> for styles
+// ..
+AOS.init()
 
 const index = () => {
   return (
     <Wrapper className="bg-black py-6 lg:pb-40 lg:flex lg:pt-24 lg:justify-center">
-      <div className="lg:w-2/5 lg:mx-20">
+      <div
+        className="lg:w-2/5 lg:mx-20"
+        data-aos="fade-up"
+        data-aos-offset="200"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+        data-aos-once="false"
+      >
         <div className="font-mono font-bold text-3xl lg:text-5xl text-white lg:text-left mx-auto text-center">
           More Payment Options <br /> Better than Cash
         </div>
@@ -27,7 +39,15 @@ const index = () => {
           <span className="ml-4">⭐ ⭐ ⭐ ⭐ ⭐</span>
         </span>
       </div>
-      <div className="">
+      <div
+        className=""
+        data-aos="fade-up"
+        data-aos-offset="200"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+        data-aos-once="false"
+      >
         <div className="pb-8 pt-12 lg:py-0 lg:mx-20 relative w-fit mx-auto">
           <img src={phone} alt="" className="mx-auto w-64 h-full" />
           <img

@@ -1,9 +1,21 @@
 import React from 'react'
 import img2 from '../../../images/img2.png'
+import AOS from 'aos'
+import 'aos/dist/aos.css' // You can also use <link> for styles
+// ..
+AOS.init()
 
 const index = () => {
   return (
-    <div className="mt-6 lg:mt-12 flex flex-col-reverse lg:flex-row justify-center items-center pb-12 lg:pb-24">
+    <div
+      className="mt-6 lg:mt-12 flex flex-col-reverse lg:flex-row justify-center items-center pb-12 lg:pb-24"
+      data-aos="fade-up"
+      data-aos-offset="200"
+      data-aos-delay="50"
+      data-aos-duration="1000"
+      data-aos-easing="ease-in-out"
+      data-aos-once="false"
+    >
       <div className="w-4/5 mt-6 lg:mt-0 lg:w-2/5 lg:px-24 lg:pr-16">
         <div className="font-semibold text-3xl px-6 lg:px-0">
           Keep your cash flow clear 💸 and keep increasing 🚀

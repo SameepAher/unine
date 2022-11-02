@@ -1,9 +1,21 @@
 import React from 'react'
 import person from '../../../images/person.png'
+import AOS from 'aos'
+import 'aos/dist/aos.css' // You can also use <link> for styles
+// ..
+AOS.init()
 
 const index = () => {
   return (
-    <div className="mt-12 pb-20">
+    <div
+      className="mt-12 pb-20"
+      data-aos="fade-up"
+      data-aos-offset="200"
+      data-aos-delay="50"
+      data-aos-duration="1000"
+      data-aos-easing="ease-in-out"
+      data-aos-once="false"
+    >
       <div className="text-2xl md:text-4xl py-7 text-center font-semibold">Our Customer Says</div>
       <div className="grid lg:grid-cols-2 py-4 px-4 md:px-12 xl:px-36 gap-y-12">
         <div className="lg:px-6">
