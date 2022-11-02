@@ -1,9 +1,12 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link } from 'gatsby'
+import cross from '../../../images/cross.png'
 import dropdownDown from '../../../images/dropDown-down.png'
 import logo from '../../../images/logo.png'
 
-const index = () => {
+const Index = () => {
+  const [mobileViewNavBar, setMobileViewNavBar] = useState(false)
+
   return (
     <div className="bg-black lg:flex justify-around py-10">
       <div className="my-auto">
@@ -11,7 +14,17 @@ const index = () => {
           <Link to={'/'}>
             <img src={logo} alt="" className="lg:-mt-1.5" />
           </Link>
-          <div className="dropdown lg:hidden my-auto">
+          <img
+            src={cross}
+            className={
+              mobileViewNavBar ? 'grid lg:hidden w-8 h-8' : 'dropdown hidden lg:hidden my-auto'
+            }
+            onClick={() => setMobileViewNavBar(!mobileViewNavBar)}
+          />
+          <div
+            className={mobileViewNavBar ? 'hidden' : 'dropdown lg:hidden my-auto'}
+            onClick={() => setMobileViewNavBar(!mobileViewNavBar)}
+          >
             <div className="bg-gray-200 w-6 h-1"></div>
             <div className="bg-black w-6 h-1"></div>
             <div className="flex">
@@ -29,6 +42,28 @@ const index = () => {
               <div className="bg-gray-200 w-3 h-1"></div>
             </div>
           </div>
+        </div>
+        <div
+          className={mobileViewNavBar ? 'grid text-white text-right mt-6 px-6 text-xl' : 'hidden'}
+        >
+          <Link to={'/learn'} className="mt-4">
+            <span>Learn</span>
+          </Link>
+          <Link to={'/apps'} className="mt-4">
+            <span>App</span>
+          </Link>
+          <Link to={'/community'} className="mt-4">
+            <span>Community</span>
+          </Link>
+          <Link to={'/unine-at-work'} className="mt-4">
+            <span>Unine at Work</span>
+          </Link>
+          <Link to={'/signup'} className="mt-4">
+            <span>Sign up</span>
+          </Link>
+          <Link to={'/demo'} className="mt-4">
+            <span>Get a demo</span>
+          </Link>
         </div>
       </div>
       <div className="whitespace-nowrap my-auto text-lg hidden lg:text-xl lg:flex my-auto font-normal text-gray-100">
@@ -59,4 +94,4 @@ const index = () => {
   )
 }
 
-export default index
+export default Index
