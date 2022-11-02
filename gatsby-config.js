@@ -1,11 +1,11 @@
 module.exports = {
-  flags: { DEV_SSR: true },
   siteMetadata: {
     title: `Gatsby Default Starter`,
     description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
     author: `@gatsbyjs`,
     siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
   },
+  // flags: { DEV_SSR: true },
   plugins: [
     `gatsby-plugin-fontawesome-css`,
     'gatsby-plugin-postcss',
@@ -34,19 +34,4 @@ module.exports = {
       },
     },
   ],
-}
-
-exports.onCreateWebpackConfig = ({ stage, loaders, actions }) => {
-  if (stage === 'build-html' || stage === 'develop-html') {
-    actions.setWebpackConfig({
-      module: {
-        rules: [
-          {
-            test: /bad-module/,
-            use: loaders.null(),
-          },
-        ],
-      },
-    })
-  }
 }
