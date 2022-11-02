@@ -13,7 +13,7 @@ AOS.init()
 
 const index = () => {
   return (
-    <Wrapper className="bg-black py-6 lg:pb-40 lg:flex lg:pt-24 lg:justify-center">
+    <Wrapper className="bg-black py-6 lg:pb-40 lg:flex lg:pt-36 lg:justify-center">
       <div
         className="lg:w-2/5 lg:mx-20"
         data-aos="fade-up"
