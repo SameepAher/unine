@@ -6,15 +6,11 @@ import logo from '../../../images/logo.png'
 const index = () => {
   return (
     <div className="bg-black lg:flex justify-around py-10">
-      {/* Logo and mobile view */}
       <div className="my-auto">
         <div className="flex justify-between px-6 text-3xl font-semibold text-white">
-          {/* Logo */}
           <Link to={'/'}>
             <img src={logo} alt="" className="lg:-mt-1.5" />
           </Link>
-
-          {/* Mobile view */}
           <div className="dropdown lg:hidden my-auto">
             <div className="bg-gray-200 w-6 h-1"></div>
             <div className="bg-black w-6 h-1"></div>
@@ -35,8 +31,6 @@ const index = () => {
           </div>
         </div>
       </div>
-
-      {/* Menu */}
       <div className="whitespace-nowrap my-auto text-lg hidden lg:text-xl lg:flex my-auto font-normal text-gray-100">
         <Link to={'/learn'}>
           <span className="px-6">Learn</span>
@@ -51,8 +45,6 @@ const index = () => {
           <span className="px-6">Unine at Work</span>
         </Link>
       </div>
-
-      {/* Buttons */}
       <div className="whitespace-nowrap my-auto text-lg lg:text-xl hidden lg:flex my-auto font-normal text-gray-100">
         <Link to={'/signup'}>
           <span className="px-4 my-auto">Sign up</span>
