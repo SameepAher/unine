@@ -5,7 +5,6 @@ import AOS from 'aos'
 import 'aos/dist/aos.css'
 
 const index = () => {
-  AOS.init()
   return (
     <div
       className="bg-green-400 lg:px-56 py-12 lg:py-16"

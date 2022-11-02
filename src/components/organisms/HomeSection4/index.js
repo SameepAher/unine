@@ -4,7 +4,6 @@ import AOS from 'aos'
 import 'aos/dist/aos.css'
 
 const index = () => {
-  AOS.init()
   return (
     <div
       className="mt-6 lg:mt-12 flex flex-col-reverse lg:flex-row justify-center items-center pb-12 lg:pb-24"

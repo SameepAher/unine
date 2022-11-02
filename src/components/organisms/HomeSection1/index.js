@@ -10,7 +10,6 @@ import AOS from 'aos'
 import 'aos/dist/aos.css'
 
 const index = () => {
-  AOS.init()
   return (
     <Wrapper className="bg-black py-6 lg:pb-40 lg:flex lg:pt-36 lg:justify-center">
       <div

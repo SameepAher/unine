@@ -8,7 +8,6 @@ import AOS from 'aos'
 import 'aos/dist/aos.css'
 
 const index = () => {
-  AOS.init()
   const cards = [
     {
       picSrc: card1,
