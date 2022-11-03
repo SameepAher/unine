@@ -12,7 +12,7 @@ const Index = () => {
   }, [])
   const [mobileViewNavBar, setMobileViewNavBar] = useState(false)
   return (
-    <div className="bg-black lg:flex justify-around py-10">
+    <div className="bg-black lg:flex justify-around py-10 lg:pt-14 tracking-wider">
       <div className="my-auto">
         <div className="flex justify-between px-6 text-3xl font-semibold text-white">
           <Link to={'/'}>
@@ -21,7 +21,6 @@ const Index = () => {
               alt=""
               className="lg:-mt-1.5"
               data-aos="fade-up"
-              data-aos-offset="200"
               data-aos-delay="50"
               data-aos-duration="1000"
               data-aos-easing="ease-in-out"
@@ -83,7 +82,6 @@ const Index = () => {
       <div
         className="whitespace-nowrap my-auto text-lg hidden lg:text-xl lg:flex my-auto font-normal text-gray-100"
         data-aos="fade-up"
-        data-aos-offset="200"
         data-aos-delay="50"
         data-aos-duration="1000"
         data-aos-easing="ease-in-out"
@@ -105,7 +103,6 @@ const Index = () => {
       <div
         className="whitespace-nowrap my-auto text-lg lg:text-xl hidden lg:flex my-auto font-normal text-gray-100"
         data-aos="fade-up"
-        data-aos-offset="200"
         data-aos-delay="50"
         data-aos-duration="1000"
         data-aos-easing="ease-in-out"

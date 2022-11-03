@@ -35,11 +35,10 @@ const Index = () => {
   ]
 
   return (
-    <div className="py-2 lg:py-8">
+    <div className="py-2 lg:py-8 lg:pb-24 pb-16 bg-gray-100">
       <div
         className="text-3xl font-semibold text-center mt-10"
         data-aos="fade-up"
-        data-aos-offset="200"
         data-aos-delay="50"
         data-aos-duration="700"
         data-aos-easing="ease-in-out"
@@ -50,7 +49,6 @@ const Index = () => {
       <div
         className="text-xl mx-auto md:w-2/5 w-4/5 font-normal text-center mt-8 text-gray-500"
         data-aos="fade-up"
-        data-aos-offset="200"
         data-aos-delay="50"
         data-aos-duration="700"
         data-aos-easing="ease-in-out"
@@ -62,7 +60,6 @@ const Index = () => {
       <div
         className="grid md:grid-cols-2 md:gap-x-8 lg:grid-cols-4 px-12 lg:px-44 mt-10 lg:mt-16 gap-y-10"
         data-aos="fade-up"
-        data-aos-offset="200"
         data-aos-delay="50"
         data-aos-duration="700"
         data-aos-easing="ease-in-out"

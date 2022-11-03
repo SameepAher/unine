@@ -1,5 +1,7 @@
 import React, { useEffect } from 'react'
 import img2 from '../../../images/img2.png'
+import globe from '../../../images/globe.png'
+import bank from '../../../images/bank.png'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 
@@ -9,28 +11,36 @@ const Index = () => {
   }, [])
   return (
     <div
-      className="mt-6 lg:mt-12 flex flex-col-reverse lg:flex-row justify-center items-center pb-12 lg:pb-24"
+      className="lg:mt-12 flex flex-col-reverse lg:flex-row justify-center items-center pb-6 lg:pb-12"
       data-aos="fade-up"
-      data-aos-offset="200"
       data-aos-delay="50"
       data-aos-duration="1000"
       data-aos-easing="ease-in-out"
       data-aos-once="false"
     >
-      <div className="w-4/5 mt-6 lg:mt-0 lg:w-2/5 lg:px-24 lg:pr-16">
-        <div className="font-semibold text-3xl px-6 lg:px-0">
-          Keep your cash flow clear 💸 and keep increasing 🚀
+      <div className="p-6 lg:pl-20 mt-6 lg:mt-0 lg:w-2/5">
+        <div className="font-semibold text-2xl lg:text-3xl lg:px-0 lg:w-3/5 leading-snug">
+          Manage regular payments easily 🤑
         </div>
-        <div className="text-2xl text-gray-600 mt-6 px-6 lg:px-0">
-          See it all at a glance when you link your cash accounts, credit cards, investments, and
-          bills.
-        </div>
-        <div className="mt-12 px-6 text-xl lg:px-0">
-          <span className="bg-green-300 py-4 px-6 rounded-lg">Try for now →</span>
+        <div className="mt-12 flex">
+          <div className="mr-6 lg:mr-12">
+            <img src={globe} alt="" className="w-12 h-12" />
+            <div className="mt-10 font-semibold text-xl lg:text-2xl">Globality</div>
+            <div className="mt-4 text-gray-500 text-lg lg:text-xl">
+              Send payments to the person in front of you and the rest of the world.
+            </div>
+          </div>
+          <div className="">
+            <img src={bank} alt="" className="w-12 h-12" />
+            <div className="mt-10 font-semibold text-xl lg:text-2xl">Integrate</div>
+            <div className="mt-4 text-gray-500 text-lg lg:text-xl">
+              We work with local banks and overseas banks so you don't have to worry.
+            </div>
+          </div>
         </div>
       </div>
       <div className="w-full lg:w-2/5 p-6 lg:p-0">
-        <img src={img2} alt="" className="w-4/5 h-80 mx-auto lg:m-0" />
+        <img src={img2} alt="" className="w-full lg:w-4/5 h-64 lg:h-96 m-auto lg:m-0" />
       </div>
     </div>
   )

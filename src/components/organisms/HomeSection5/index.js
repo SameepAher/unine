@@ -9,9 +9,8 @@ const Index = () => {
   }, [])
   return (
     <div
-      className="mt-12 pb-20"
+      className="mt-12 pt-6 lg:pt-12 pb-20 bg-gray-100"
       data-aos="fade-up"
-      data-aos-offset="200"
       data-aos-delay="50"
       data-aos-duration="1000"
       data-aos-easing="ease-in-out"

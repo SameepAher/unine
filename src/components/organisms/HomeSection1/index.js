@@ -14,20 +14,19 @@ const Index = () => {
     AOS.init()
   }, [])
   return (
-    <Wrapper className="bg-black py-6 lg:pb-40 lg:flex lg:pt-36 lg:justify-center">
+    <Wrapper className="bg-black py-6 lg:pb-40 lg:flex lg:pt-28 lg:justify-center">
       <div
         className="lg:w-2/5 lg:mx-20"
         data-aos="fade-up"
-        data-aos-offset="200"
         data-aos-delay="350"
         data-aos-duration="1000"
         data-aos-easing="ease-out"
         data-aos-once="false"
       >
-        <div className="font-mono font-bold text-3xl lg:text-5xl text-white lg:text-left mx-auto text-center">
-          More Payment Options <br /> Better than Cash
-        </div>
-        <div className="mt-6 lg:mt-12 font-mono font-normal text-sm text-white lg:text-left text-center sm:w-3/5 mx-auto lg:mx-0 lg:w-4/5 lg:text-xl">
+        <p className="font-mono font-bold text-3xl lg:text-5xl text-white lg:text-left mx-auto text-center lg:leading-snug">
+          More Payment Options better than Cash
+        </p>
+        <div className="mt-6 lg:mt-12 font-mono font-normal text-sm text-white lg:text-left text-center sm:w-3/5 mx-auto lg:mx-0 lg:w-4/5 lg:text-xl lg:leading-8">
           With a UNINE you can access the more than 240 million customers out there, as well as
           offering management tools, options, and payment methods.
         </div>
@@ -43,7 +42,6 @@ const Index = () => {
       <div
         className=""
         data-aos="fade-up"
-        data-aos-offset="200"
         data-aos-delay="350"
         data-aos-duration="1000"
         data-aos-easing="ease-in-out"
@@ -56,7 +54,6 @@ const Index = () => {
             alt=""
             className="hidden sm:flex border-2 border-black absolute bottom-40 -left-24 w-56 h-12"
             data-aos="slide-right"
-            data-aos-offset="200"
             data-aos-delay="50"
             data-aos-duration="1000"
             data-aos-easing="ease-in-out"
@@ -67,7 +64,6 @@ const Index = () => {
             alt=""
             className="hidden sm:flex border-2 border-black absolute bottom-12 left-28 w-56 h-12"
             data-aos="slide-left"
-            data-aos-offset="200"
             data-aos-delay="50"
             data-aos-duration="1000"
             data-aos-easing="ease-in-out"

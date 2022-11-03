@@ -14,7 +14,6 @@ const Index = () => {
         <div
           className="mx-auto font-semibold text-4xl px-12 lg:px-0 lg:w-3/5 text-center"
           data-aos="fade-up"
-          data-aos-offset="200"
           data-aos-delay="50"
           data-aos-duration="1000"
           data-aos-easing="ease-in-out"
@@ -25,7 +24,6 @@ const Index = () => {
         <div
           className="mt-12 lg:w-2/5 px-12 lg:px-0 mx-auto text-center"
           data-aos="fade-up"
-          data-aos-offset="200"
           data-aos-delay="50"
           data-aos-duration="1000"
           data-aos-easing="ease-in-out"
@@ -37,7 +35,6 @@ const Index = () => {
         <div
           className="flex justify-center mt-12"
           data-aos="fade-up"
-          data-aos-offset="200"
           data-aos-delay="50"
           data-aos-duration="1000"
           data-aos-easing="ease-in-out"
