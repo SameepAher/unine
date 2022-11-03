@@ -9,7 +9,14 @@ const index = () => {
     <>
       <div className="bg-black text-white px-16 lg:pr-24 py-12 lg:py-20 border-b-2">
         <div className="lg:flex justify-between">
-          <div>
+          <div
+            data-aos="fade-up"
+            data-aos-offset="200"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+            data-aos-once="false"
+          >
             <Link to={'/'}>
               <img src={logo} alt="" className="m-auto" />
             </Link>
@@ -20,7 +27,15 @@ const index = () => {
             </div>
           </div>
           <div className="mt-6 text-lg lg:mt-0 lg:w-2/5 text-center lg:text-left">
-            <div className="lg:flex justify-between">
+            <div
+              className="lg:flex justify-between"
+              data-aos="fade-up"
+              data-aos-offset="200"
+              data-aos-delay="50"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+              data-aos-once="false"
+            >
               <div className="lg:w-44 lg:mx-6">
                 Technology Park 8-14 Marie Curie Street 08042 Barcelona
               </div>

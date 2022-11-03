@@ -1,18 +1,32 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { Link } from 'gatsby'
 import cross from '../../../images/cross.png'
 import dropdownDown from '../../../images/dropDown-down.png'
 import logo from '../../../images/logo.png'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 const Index = () => {
+  useEffect(() => {
+    AOS.init()
+  }, [])
   const [mobileViewNavBar, setMobileViewNavBar] = useState(false)
-
   return (
     <div className="bg-black lg:flex justify-around py-10">
       <div className="my-auto">
         <div className="flex justify-between px-6 text-3xl font-semibold text-white">
           <Link to={'/'}>
-            <img src={logo} alt="" className="lg:-mt-1.5" />
+            <img
+              src={logo}
+              alt=""
+              className="lg:-mt-1.5"
+              data-aos="fade-up"
+              data-aos-offset="200"
+              data-aos-delay="50"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+              data-aos-once="false"
+            />
           </Link>
           <img
             src={cross}
@@ -66,7 +80,15 @@ const Index = () => {
           </Link>
         </div>
       </div>
-      <div className="whitespace-nowrap my-auto text-lg hidden lg:text-xl lg:flex my-auto font-normal text-gray-100">
+      <div
+        className="whitespace-nowrap my-auto text-lg hidden lg:text-xl lg:flex my-auto font-normal text-gray-100"
+        data-aos="fade-up"
+        data-aos-offset="200"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+        data-aos-once="false"
+      >
         <Link to={'/learn'}>
           <span className="px-6">Learn</span>
         </Link>
@@ -80,7 +102,15 @@ const Index = () => {
           <span className="px-6">Unine at Work</span>
         </Link>
       </div>
-      <div className="whitespace-nowrap my-auto text-lg lg:text-xl hidden lg:flex my-auto font-normal text-gray-100">
+      <div
+        className="whitespace-nowrap my-auto text-lg lg:text-xl hidden lg:flex my-auto font-normal text-gray-100"
+        data-aos="fade-up"
+        data-aos-offset="200"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+        data-aos-once="false"
+      >
         <Link to={'/signup'}>
           <span className="px-4 my-auto">Sign up</span>
         </Link>

@@ -19,9 +19,9 @@ const Index = () => {
         className="lg:w-2/5 lg:mx-20"
         data-aos="fade-up"
         data-aos-offset="200"
-        data-aos-delay="50"
+        data-aos-delay="350"
         data-aos-duration="1000"
-        data-aos-easing="ease-in-out"
+        data-aos-easing="ease-out"
         data-aos-once="false"
       >
         <div className="font-mono font-bold text-3xl lg:text-5xl text-white lg:text-left mx-auto text-center">
@@ -44,7 +44,7 @@ const Index = () => {
         className=""
         data-aos="fade-up"
         data-aos-offset="200"
-        data-aos-delay="50"
+        data-aos-delay="350"
         data-aos-duration="1000"
         data-aos-easing="ease-in-out"
         data-aos-once="false"
@@ -55,11 +55,23 @@ const Index = () => {
             src={mcdLeft}
             alt=""
             className="hidden sm:flex border-2 border-black absolute bottom-40 -left-24 w-56 h-12"
+            data-aos="slide-right"
+            data-aos-offset="200"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+            data-aos-once="false"
           />
           <img
             src={mcdRight}
             alt=""
             className="hidden sm:flex border-2 border-black absolute bottom-12 left-28 w-56 h-12"
+            data-aos="slide-left"
+            data-aos-offset="200"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+            data-aos-once="false"
           />
         </div>
         <div className="lg:hidden w-4/5 py-6 mx-auto">
