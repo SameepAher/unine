@@ -21,10 +21,10 @@ const Index = () => {
         <img src={img1} alt="" className="w-full lg:w-4/5 h-64 lg:h-96 m-auto" />
       </div>
       <div className="p-6 lg:mt-6 lg:mt-0 lg:w-2/5">
-        <div className="font-semibold text-2xl lg:text-3xl lg:w-3/5 leading-snug">
+        <div className="font-semibold text-2xl lg:text-3xl lg:w-3/5 lg:leading-snug">
           Keep your cash flow clear 💸 and keep increasing 🚀
         </div>
-        <div className="text-xl lg:text-2xl text-gray-600 mt-6 lg:mt-10 lg:w-4/5 leading-snug">
+        <div className="text-xl lg:text-2xl text-gray-600 mt-6 lg:mt-10 lg:w-4/5 lg:leading-snug">
           See it all at a glance when you link your cash accounts, credit cards, investments, and
           bills.
         </div>

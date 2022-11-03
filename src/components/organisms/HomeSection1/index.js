@@ -16,7 +16,7 @@ const Index = () => {
     })
   }, [])
   return (
-    <Wrapper className="bg-black py-6 lg:pb-40 lg:flex lg:pt-28 lg:justify-center">
+    <Wrapper className="bg-black py-6 lg:pb-40 lg:flex lg:pt-28 lg:justify-center -z-50">
       <div
         className="lg:w-2/5 lg:mx-20"
         data-aos="fade-up"
@@ -47,12 +47,12 @@ const Index = () => {
         data-aos-duration="1000"
         data-aos-easing="ease-in-out"
       >
-        <div className="pb-8 pt-12 lg:py-0 lg:mx-20 relative w-fit mx-auto">
+        <div className="pb-8 pt-12 lg:py-0 lg:mx-20 relative w-fit mx-auto z-0">
           <img src={phone} alt="" className="mx-auto w-64 h-full" />
           <img
             src={mcdLeft}
             alt=""
-            className="hidden sm:flex border-2 border-black absolute bottom-40 -left-24 w-56 h-12"
+            className=" sm:flex border-2 border-black absolute bottom-40 -left-16 sm:-left-24 w-56 h-12"
             data-aos="slide-right"
             data-aos-delay="50"
             data-aos-duration="1000"
@@ -62,7 +62,7 @@ const Index = () => {
           <img
             src={mcdRight}
             alt=""
-            className="hidden sm:flex border-2 border-black absolute bottom-12 left-28 w-56 h-12"
+            className="flex border-2 border-black absolute bottom-12 left-20 sm:left-28 w-56 h-12"
             data-aos="slide-left"
             data-aos-delay="50"
             data-aos-duration="1000"

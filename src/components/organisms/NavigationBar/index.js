@@ -13,6 +13,9 @@ const Index = () => {
     })
   }, [])
   const [mobileViewNavBar, setMobileViewNavBar] = useState(false)
+  const toggleFunction = () => {
+    setMobileViewNavBar(!mobileViewNavBar)
+  }
   return (
     <div className="bg-black lg:flex justify-around py-10 lg:pt-14 tracking-wider">
       <div className="my-auto">
@@ -33,11 +36,11 @@ const Index = () => {
             className={
               mobileViewNavBar ? 'grid lg:hidden w-8 h-8' : 'dropdown hidden lg:hidden my-auto'
             }
-            onClick={() => setMobileViewNavBar(!mobileViewNavBar)}
+            onClick={() => toggleFunction()}
           />
           <div
             className={mobileViewNavBar ? 'hidden' : 'dropdown lg:hidden my-auto'}
-            onClick={() => setMobileViewNavBar(!mobileViewNavBar)}
+            onClick={() => toggleFunction()}
           >
             <div className="bg-gray-200 w-6 h-1"></div>
             <div className="bg-black w-6 h-1"></div>
@@ -58,24 +61,28 @@ const Index = () => {
           </div>
         </div>
         <div
-          className={mobileViewNavBar ? 'grid text-white text-right mt-6 px-6 text-xl' : 'hidden'}
+          className={
+            mobileViewNavBar
+              ? 'bg-gray-900 w-full absolute grid text-white text-left mt-6 px-6 pb-3 text-xl translate-all ease-in duration-500 top-[84px]'
+              : 'h-0 px-6 top-[-250px] w-full'
+          }
         >
-          <Link to={'/learn'} className="mt-4">
+          <Link to={'/learn'} className="mt-3">
             <span>Learn</span>
           </Link>
-          <Link to={'/apps'} className="mt-4">
+          <Link to={'/apps'} className="mt-3">
             <span>App</span>
           </Link>
-          <Link to={'/community'} className="mt-4">
+          <Link to={'/community'} className="mt-3">
             <span>Community</span>
           </Link>
-          <Link to={'/unine-at-work'} className="mt-4">
+          <Link to={'/unine-at-work'} className="mt-3">
             <span>Unine at Work</span>
           </Link>
-          <Link to={'/signup'} className="mt-4">
+          <Link to={'/signup'} className="mt-3">
             <span>Sign up</span>
           </Link>
-          <Link to={'/demo'} className="mt-4">
+          <Link to={'/demo'} className="mt-3">
             <span>Get a demo</span>
           </Link>
         </div>
