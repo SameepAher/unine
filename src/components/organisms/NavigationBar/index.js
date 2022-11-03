@@ -64,7 +64,7 @@ const Index = () => {
           className={
             mobileViewNavBar
               ? 'bg-gray-900 w-full absolute grid text-white text-left mt-6 px-6 pb-3 text-xl translate-all ease-in duration-500 top-[84px]'
-              : 'h-0 px-6 top-[-450px] w-full'
+              : 'h-0 px-6 invisible top-[-450px] w-full'
           }
         >
           <Link to={'/learn'} className="mt-3">
