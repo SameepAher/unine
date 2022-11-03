@@ -5,7 +5,9 @@ import 'aos/dist/aos.css'
 
 const Index = () => {
   useEffect(() => {
-    AOS.init()
+    AOS.init({
+      once: true,
+    })
   }, [])
   return (
     <div
@@ -14,7 +16,6 @@ const Index = () => {
       data-aos-delay="50"
       data-aos-duration="1000"
       data-aos-easing="ease-in-out"
-      data-aos-once="false"
     >
       <div className="w-full lg:w-2/5 p-6 lg:p-0">
         <img src={img1} alt="" className="w-full lg:w-4/5 h-64 lg:h-96 m-auto" />

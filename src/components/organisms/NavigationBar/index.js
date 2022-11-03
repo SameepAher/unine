@@ -8,7 +8,9 @@ import 'aos/dist/aos.css'
 
 const Index = () => {
   useEffect(() => {
-    AOS.init()
+    AOS.init({
+      once: true,
+    })
   }, [])
   const [mobileViewNavBar, setMobileViewNavBar] = useState(false)
   return (
@@ -24,7 +26,6 @@ const Index = () => {
               data-aos-delay="50"
               data-aos-duration="1000"
               data-aos-easing="ease-in-out"
-              data-aos-once="false"
             />
           </Link>
           <img
@@ -85,7 +86,6 @@ const Index = () => {
         data-aos-delay="50"
         data-aos-duration="1000"
         data-aos-easing="ease-in-out"
-        data-aos-once="false"
       >
         <Link to={'/learn'}>
           <span className="px-6">Learn</span>
@@ -106,7 +106,6 @@ const Index = () => {
         data-aos-delay="50"
         data-aos-duration="1000"
         data-aos-easing="ease-in-out"
-        data-aos-once="false"
       >
         <Link to={'/signup'}>
           <span className="px-4 my-auto">Sign up</span>

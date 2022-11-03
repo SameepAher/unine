@@ -6,7 +6,9 @@ import 'aos/dist/aos.css'
 
 const Index = () => {
   useEffect(() => {
-    AOS.init()
+    AOS.init({
+      once: true,
+    })
   }, [])
   return (
     <div className="bg-green-400 lg:px-56 py-12 lg:py-16">
@@ -17,7 +19,6 @@ const Index = () => {
           data-aos-delay="50"
           data-aos-duration="1000"
           data-aos-easing="ease-in-out"
-          data-aos-once="false"
         >
           Get Unine App on Google Play or App Store
         </div>
@@ -27,7 +28,6 @@ const Index = () => {
           data-aos-delay="50"
           data-aos-duration="1000"
           data-aos-easing="ease-in-out"
-          data-aos-once="false"
         >
           Build your financial literacy within a transparant community. Follow other investors,
           share insights with people.
@@ -38,7 +38,6 @@ const Index = () => {
           data-aos-delay="50"
           data-aos-duration="1000"
           data-aos-easing="ease-in-out"
-          data-aos-once="false"
         >
           <img src={appStore} alt="" className="cursor-pointer mx-4" />
           <img src={playStore} alt="" className="cursor-pointer mx-4" />

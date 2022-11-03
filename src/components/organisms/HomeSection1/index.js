@@ -11,7 +11,9 @@ import 'aos/dist/aos.css'
 
 const Index = () => {
   useEffect(() => {
-    AOS.init()
+    AOS.init({
+      once: true,
+    })
   }, [])
   return (
     <Wrapper className="bg-black py-6 lg:pb-40 lg:flex lg:pt-28 lg:justify-center">
@@ -21,7 +23,6 @@ const Index = () => {
         data-aos-delay="350"
         data-aos-duration="1000"
         data-aos-easing="ease-out"
-        data-aos-once="false"
       >
         <p className="font-mono font-bold text-3xl lg:text-5xl text-white lg:text-left mx-auto text-center lg:leading-snug">
           More Payment Options better than Cash
@@ -45,7 +46,6 @@ const Index = () => {
         data-aos-delay="350"
         data-aos-duration="1000"
         data-aos-easing="ease-in-out"
-        data-aos-once="false"
       >
         <div className="pb-8 pt-12 lg:py-0 lg:mx-20 relative w-fit mx-auto">
           <img src={phone} alt="" className="mx-auto w-64 h-full" />
@@ -67,7 +67,6 @@ const Index = () => {
             data-aos-delay="50"
             data-aos-duration="1000"
             data-aos-easing="ease-in-out"
-            data-aos-once="false"
           />
         </div>
         <div className="lg:hidden w-4/5 py-6 mx-auto">

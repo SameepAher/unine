@@ -7,7 +7,9 @@ import 'aos/dist/aos.css'
 
 const Index = () => {
   useEffect(() => {
-    AOS.init()
+    AOS.init({
+      once: true,
+    })
   }, [])
   return (
     <div
@@ -16,7 +18,6 @@ const Index = () => {
       data-aos-delay="50"
       data-aos-duration="1000"
       data-aos-easing="ease-in-out"
-      data-aos-once="false"
     >
       <div className="p-6 lg:pl-20 mt-6 lg:mt-0 lg:w-2/5">
         <div className="font-semibold text-2xl lg:text-3xl lg:px-0 lg:w-3/5 leading-snug">

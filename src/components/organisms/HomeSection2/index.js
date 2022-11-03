@@ -9,7 +9,9 @@ import 'aos/dist/aos.css'
 
 const Index = () => {
   useEffect(() => {
-    AOS.init()
+    AOS.init({
+      once: true,
+    })
   }, [])
   const cards = [
     {
@@ -42,7 +44,6 @@ const Index = () => {
         data-aos-delay="50"
         data-aos-duration="700"
         data-aos-easing="ease-in-out"
-        data-aos-once="false"
       >
         Safe & Convenient Transaction
       </div>
@@ -52,7 +53,6 @@ const Index = () => {
         data-aos-delay="50"
         data-aos-duration="700"
         data-aos-easing="ease-in-out"
-        data-aos-once="false"
       >
         Want to pay anything so easy with the touch of a finger. Through UNINE, you can make
         practically any transaction.
@@ -63,7 +63,6 @@ const Index = () => {
         data-aos-delay="50"
         data-aos-duration="700"
         data-aos-easing="ease-in-out"
-        data-aos-once="false"
       >
         {cards.map((card) => (
           <TransactionCard picSrc={card.picSrc} title={card.title} description={card.description} />

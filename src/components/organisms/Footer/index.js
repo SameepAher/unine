@@ -1,10 +1,17 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Link } from 'gatsby'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebookSquare, faInstagram, faDiscord } from '@fortawesome/free-brands-svg-icons'
 import logo from '../../../images/logo.png'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
-const index = () => {
+const Index = () => {
+  useEffect(() => {
+    AOS.init({
+      once: true,
+    })
+  }, [])
   return (
     <>
       <div className="bg-black text-white px-16 lg:pr-24 py-12 lg:py-20 border-b-2">
@@ -15,7 +22,6 @@ const index = () => {
             data-aos-delay="50"
             data-aos-duration="1000"
             data-aos-easing="ease-in-out"
-            data-aos-once="false"
           >
             <Link to={'/'}>
               <img src={logo} alt="" className="m-auto" />
@@ -34,7 +40,6 @@ const index = () => {
               data-aos-delay="50"
               data-aos-duration="1000"
               data-aos-easing="ease-in-out"
-              data-aos-once="false"
             >
               <div className="lg:w-44 lg:mx-6">
                 Technology Park 8-14 Marie Curie Street 08042 Barcelona
@@ -70,4 +75,4 @@ const index = () => {
   )
 }
 
-export default index
+export default Index

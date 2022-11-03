@@ -5,7 +5,9 @@ import 'aos/dist/aos.css'
 
 const Index = () => {
   useEffect(() => {
-    AOS.init()
+    AOS.init({
+      once: true,
+    })
   }, [])
   return (
     <div
@@ -14,7 +16,6 @@ const Index = () => {
       data-aos-delay="50"
       data-aos-duration="1000"
       data-aos-easing="ease-in-out"
-      data-aos-once="false"
     >
       <div className="text-2xl md:text-4xl py-7 text-center font-semibold">Our Customer Says</div>
       <div className="grid lg:grid-cols-2 py-4 px-4 md:px-12 xl:px-36 gap-y-12">
